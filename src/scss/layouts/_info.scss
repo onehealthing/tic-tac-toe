@@ -1,0 +1,27 @@
+.info {
+
+    &-container {
+        @include border(2px, $color-brand, 5px);
+
+        display: flex;
+        margin: 0 5px 25px;
+    }
+
+    &-title {
+        @include font(24px, 700);
+
+        margin: 3px;
+        padding: 5px;
+        width: 50%;
+        text-align: center;
+        color: $color-brand;
+
+        &.active {
+            background-color: $color-brand-dark;
+            color: $color-white;
+            border-radius: 5px;
+        }
+
+    }
+
+}

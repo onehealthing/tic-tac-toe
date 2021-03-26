@@ -1,0 +1,22 @@
+@mixin size($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+
+@mixin absolute($left, $top) {
+    position: absolute;
+    left: $left;
+    top: $top;
+    transform: translate(-$left, -$top);
+}
+
+@mixin font($size, $weight, $name: 'Roboto') {
+    font-family: $name, sans-serif;
+    font-weight: $weight;
+    font-size: $size;
+}
+
+@mixin border($size, $color, $radius) {
+    border: $size solid $color;
+    border-radius: $radius;
+}

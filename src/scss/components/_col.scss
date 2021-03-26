@@ -1,0 +1,21 @@
+.col {
+    @include size(150px);
+    @include font(48px, 700);
+    @include border(2px, $color-brand, 5px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    color: $color-brand;
+    
+    &:hover {
+        cursor: pointer;
+        background-color: $color-brand;
+        color: $color-white;
+    }
+
+    &:active {
+        background-color: $color-brand-dark;
+    }
+}
